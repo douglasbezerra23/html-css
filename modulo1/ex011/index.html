@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias HTML</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente
+        ou diminua o tamanho do seu navegador.
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequna.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="" srcset="imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo audios</h1>
+    <p>vamos aprender a reproduzir audios em html5</p>
+    <audio preload="auto" autoplay controls >
+        <source src="midia/cbjr.mpeg" type="audio/mpeg">
+        <source src="midia/cbjr.mpeg" type="audio/ogg">
+        <source src="midia/cbjr.mpeg" type="audio/wav">
+        <p>infelizmente seu navegador nao consegue reproduzir esse audio. 
+            <a href="midia/cbjr.mpeg">clique aqui para baixar</a>
+        </p>
+    </audio>
+</body>
+</html>
