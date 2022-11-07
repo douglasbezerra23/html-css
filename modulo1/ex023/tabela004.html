@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        th, td{
+            border: 1px solid gray;
+            padding: 10px;
+        }
+        th.mulher{
+            background-color: pink;
+        }
+        th.homens{
+            background-color: rgba(123, 167, 248, 0.705);
+        }
+        tr.mulher{
+            background-color: pink;
+        }
+        tr.homens{
+            background-color: rgba(123, 167, 248, 0.705);
+        }
+        td:hover{
+            background-color: rgba(95, 235, 204, 0.808);
+        }
+    </style>
+</head>
+<body>
+    <h1>Filmes Favoritos</h1>
+    <table>
+    <thead>
+        
+        <caption>
+            Filmes Favoritos
+        </caption>
+        
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        
+    </thead>
+    <tbody>
+        <tr class="mulher">
+            <th rowspan="3" scope="rowgroup" class="mulher">mulheres</th>
+            <td>Ana Maria</td>
+            <td>Alien</td>
+            <td>Rambo</td>
+            <td>Vingadores</td>
+        </tr>
+        <tr class="mulher">
+            <td>Beatrix Souza</td>
+            <td>Hulk</td>
+            <td>inception</td>
+            <td>batman</td>
+        </tr>
+        <tr class="mulher">
+            <td>Claudia Melo</td>
+            <td>Oblivion</td>
+            <td>Matrix</td>
+            <td>Big Hero</td>
+        </tr>
+        <tr class="homens">
+            <th rowspan="3" scope="rowgroup" class="homens">Homens</th>
+            <td>Bruno Mendoca</td>
+            <td>Intocaveis</td>
+            <td>Amnesia</td>
+            <td>Gladiador</td>
+        </tr>
+        <tr class="homens">
+            <td>Douglas Bezerra</td>
+            <td>Gigantes de Aco</td>
+            <td>Homen-Aranha</td>
+            <td>Furia de Titans</td>
+        </tr>
+        <tr class="homens">
+            <td>Joao Silva</td>
+            <td>Jumanji</td>
+            <td>Predador</td>
+            <td>Interestelar</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="4" scope="row">Total</th>
+            <td>1000</td>
+        </tr>
+    </tfoot>
+    </table>
+</body>
+</html>
